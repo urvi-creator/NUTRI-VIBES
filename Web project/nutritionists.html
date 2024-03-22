@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="nutritionists.css">
+    <title>Our Nutritionists - NutriVibe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo">NutriVibe</a>
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+            </div>
+                <div class="login">
+                    <a href="index.html"><button class="signup">Sign Up</button></a>
+                    <a href="index.html"><button>Log In</button></a>
+                </div>
+        </nav>
+    </header>
+    <h1>Meet Our Nutritionists</h1>
+
+    <div class="nutritionists">
+        <div class="nutritionist">
+            <img src="assets/nutritionist-1.jpg" alt="Lavender Avenson">
+            <h2>Lavender Avenson</h2>
+            <p>Specializes in weight loss and sports nutrition. She has been helping clients achieve their fitness goals for over 10 years.</p>
+        </div>
+        <div class="nutritionist">
+            <img src="assets/nutritionist-2.jpeg" alt="Jane Doe">
+            <h2>Jane Doe</h2>
+            <p>Specializes in diabetes management and plant-based diets. She believes in the power of nutrition to improve overall health and wellbeing.</p>
+        </div>
+        <div class="nutritionist">
+            <img src="assets/nutritionist-3.jpg" alt="David Wilson">
+            <h2>David Wilson</h2>
+            <p>Specializes in gut health and autoimmune disorders. He takes a holistic approach to nutrition, focusing on both physical and mental health.</p>
+        </div>
+        <div class="nutritionist">
+            <img src="assets/nutritionist-4.jpeg" alt="Michael Johnson">
+            <h2>Michael Johnson</h2>
+            <p>Specializes in vegan and vegetarian nutrition. He is passionate about sustainable eating and creating delicious plant-based meals.</p>
+        </div>
+        <div class="nutritionist">
+            <img src="assets/nutritionist-5.jpg" alt="Emily Brown">
+            <h2>Emily Brown</h2>
+            <p>Specializes in prenatal and postnatal nutrition. She provides personalized guidance to support mothers and their babies during and after pregnancy.</p>
+        </div>
+        <div class="nutritionist">
+            <img src="assets/nutritionist-6.png" alt="Alice Smith">
+            <h2>Alice Smith</h2>
+            <p>Specializes in nutritional therapy for mental health. She combines nutrition and lifestyle changes to support individuals with anxiety, depression, and other mental health conditions.</p>
+        </div>
+    </div>
+        <section class="booking">
+            <h2>Book a Nutritionist</h2>
+            <form action="submit_booking.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="nutritionist">Nutritionist:</label>
+                <select id="nutritionist" name="nutritionist" required>
+                    <option value="">Select a Nutritionist</option>
+                    <option value="lavender-avenson">Lavender Avenson</option>
+                    <option value="jane-doe">Jane Doe</option>
+                    <option value="david-wilson">David Wilson</option>
+                    <option value="michael-johnson">Michael Johnson</option>
+                    <option value="emily-brown">Emily Brown</option>
+                    <option value="alice-smith">Alice Smith</option>
+                </select>
+    
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <footer>
+            <h3>Connect with NutriVibe</h3>
+            <div class="right">
+                <div class="links">
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="social">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook-square'></i>
+                   
+                </div>
+                <p>Copyright © 2024 NutriVibe, All Rights Reserved.</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>

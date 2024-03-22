@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NUTRI-VIBES SERVICES</title>
+    <link rel="stylesheet" type="text/css" href="services.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">
+            <img src="assets/logo.jpeg.jpg" alt="Logo">
+        </a>
+        <div class="links">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="User profile.php">My Profile</a>
+        </div>
+    </nav>
+    <div class="content-with-images">
+        <div class="content-text">
+            <h2>NUTRI-VIBES SERVICES</h2>
+            <p>Good health is not merely a matter of chance; it's a conscious choice we make every day, starting with what we put on our plates. A healthy diet forms the cornerstone of well-being, offering benefits that extend far beyond just physical vitality. By nourishing our bodies with wholesome, nutrient-rich foods like vibrant fruits, crisp vegetables, lean proteins, and whole grains, we fortify our immune systems, bolster our energy levels, and safeguard our long-term health. Each bite laden with vitamins, minerals, and antioxidants is a testament to our commitment to self-care, paving the way for increased longevity and resilience against illness. With every meal, we have the opportunity to cultivate a harmonious relationship between mind, body, and plate, fostering a lifestyle steeped in vitality and fulfillment.</p>
+            <p>On the road to attain and maintain a healthy lifestyle through healthy and nutritious diets there gears that accompany the accomplishment to a good healthy.Through this website you will be able to attain the basic essentials to a healthy lifestyle mainly fueled by food intake</p>
+            <h3>SERVICES OFFERED</h3>
+            <ol>
+                <li>Personalized meals</li>
+                <li>Health consultations</li>
+            </ol>
+            <h3>PERSONALIZE YOUR MEAL</h3>
+            <p>Collect a variety of food rich in vibrant fruits, crisp vegetables, lean proteins, whole grains,vitamins, minerals, and antioxidants to nourish your body according to your needs</p>
+            <select id="dietType" onchange="redirectToRegistration()">
+                <option value="">Select your preference</option> 
+                <option value="meat">Meat</option>
+                <option value="drinks">Drinks</option>
+            </select>
+            <script>
+                function redirectToRegistration(){
+                    let dietType = document.getElementById("dietType").value;
+                    if(dietType === "meat"){
+                        window.location.href = "meat.html";
+                    } else if(dietType === "drinks"){
+                        window.location.href = "drinks.html";
+                    }
+                }
+            </script>
+        </div>
+        <div class="content-image">
+            <img src="assets/diet1.jpg" alt="Diet Image" width="30%">
+        </div>
+        <div class="content-image">
+            <img src="assets/diet.jpg" alt="Diet Image" id="diet" width="40%">
+        </div>
+    </div>
+</body>
+</html>

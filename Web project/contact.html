@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="view-transition" content="same-origin"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">
+            <img src="assets/logo.jpeg.jpg" alt="Logo">
+        </a>
+        <div class="links">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="login">
+            <a href="Sign up.php"><button class="signup">Sign Up</button></a>
+            <a href="Sign in.php"><button class="signin"></buttonclass>Sign In</button></a>
+        </div>
+    </nav>
+    
+   
+   
+
+    
+    <h1 class="main-heading"><center>CONTACT US</center></h1>
+    <p class="sub-heading"><center>Here you can contact us if you have any complaints or questions</center></p>
+    <p class="sub-heading2"><center>Below is a form you can fill in and write about your feedback:</center></p>
+
+
+        
+       
+        <form> 
+        
+        <div class="form-row">
+            
+                <input type="text" id="name" placeholder="Enter your Name">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                
+                <input type="email" id="email" placeholder="Enter your Email">
+                <span class="error-message"></span>
+            </div>
+
+
+            <div class="form-row">
+                
+                <input type="tel" pattern="[0-9]{10}" placeholder="Enter your Phone Number">
+                <span class="error-message"></span>
+            </div>
+
+    <div class="form-grid">
+    
+    <div>
+        <label>Satisfaction level</label>
+        <div class="radio-group">
+            <input type="radio" id="low" name="Satisfaction level" value="Low">
+            <label for="low">Low</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="medium" name="Satisfaction level" value="Medium">
+            <label for="medium">Medium</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="high" name="Satisfaction level" value="High">
+            <label for="high">High</label>
+        </div>
+    </div>
+
+    
+    <div>
+       
+          
+            
+        <textarea rows="5" cols="15">
+           Enter feedback here
+            
+        </textarea>
+        <span class="error-message"></span>
+        </div>
+       
+
+        <div>
+        <div class="submit-button">
+        <input type="Submit" id="submit-btn" value="Submit" name="Submit">
+    </div>
+    <div>
+        <div class="reset-button">
+        <input type="Reset" id="reset-btn" name="Reset">
+    </div>
+    <div id="success-message"></div>
+
+    </form>
+    <script src="contact.js"></script>
+
+    </body>
+    </html>

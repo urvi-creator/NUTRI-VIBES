@@ -1,0 +1,130 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9290C3;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav {
+    padding: 0 40px; 
+    margin-bottom: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #4c4d52;
+}
+
+
+
+
+
+
+nav .links a,
+nav .login button {
+    margin-right: 20px;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .links a:hover {
+    background-color: #fff; 
+    color: #4c4d52; 
+}
+
+nav .login button:hover {
+    background-color: #3ab9f4;
+    color: #fff; 
+}
+
+nav .login button.signup {
+    background-color: #3ab9f4;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+nav .login button.signup:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+nav .login button.signin{
+    background-color: #3ab9f4;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+nav .login button.signin:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+auth-buttons {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    text-decoration: none; 
+    color: #5c6bc0; 
+    background-color: white; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #5c6bc0; 
+    color:white ;
+}
+
+
+.about-section, .testimonials-section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.about-section h1, .testimonials-section h2 {
+    text-align: center;
+    color: black; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.about-section p, .testimonials-section .testimonial p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.testimonials-section .testimonial {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials-section .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}

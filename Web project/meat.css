@@ -1,0 +1,42 @@
+body {
+    background-color: beige;
+}
+
+.captioned-img {
+    display: block; 
+    position: relative;
+    width: 30%; 
+    margin: 10px auto; 
+}
+
+.captioned-img img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+
+.caption {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(139, 0, 0, 0.7); 
+    color: white; 
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #ccc; 
+    padding: 8px 16px; 
+    margin: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #f5f5f5; 
+}

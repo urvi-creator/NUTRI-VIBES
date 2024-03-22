@@ -1,0 +1,154 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:#86b3f7;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav .links a:hover {
+    color: #2980b9; 
+
+    }
+.profile-page {
+    max-width: 615px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.cover-image {
+    height: 200px;
+    background-color: #7469B6;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #95a5a6;
+    border-radius: 50%;
+    margin: -50px auto 20px;
+    background-size: cover;
+    background-position: top right;
+    transition: transform 0.3s ease; 
+}
+
+.avatar:hover {
+    transform: scale(1.2); 
+}
+
+
+
+.user-details {
+    text-align: center;
+    color: #333;
+}
+
+.user-details h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.user-details p {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.update-button,
+.log_out-button ,.delete-account-button,.change-profile-pic-button{
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.update-button {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.log_out-button {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.delete-account-button{
+    background-color: #e74c3c; 
+    color: white; 
+   
+}
+.delete-account-button a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Changes text color to white */
+    font-weight: bold; /* Makes text bold */
+}
+.change-profile-pic-button{
+    background-color: black;
+    color: #fff;
+}
+
+
+.update-button:hover{
+    background-color: palevioletred;
+}
+.log_out-button:hover {
+    background-color: #1d8348;
+}
+
+
+.delete-account-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.change-profile-pic-button:hover {
+    background-color: purple; 
+}
+
