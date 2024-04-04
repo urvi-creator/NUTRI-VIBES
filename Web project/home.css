@@ -14,7 +14,7 @@ a {
 img {
     object-fit: cover;
 }
-/* Background animation */
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -29,9 +29,9 @@ img {
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(-45deg, #0f2182, #007bff, #0f2182); /* Gradient background */
+    background: linear-gradient(-45deg, #0f2182, #007bff, #0f2182); 
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite; /* Apply animation */
+    animation: gradientAnimation 15s ease infinite; 
 }
 
 nav {
@@ -50,18 +50,18 @@ nav a.logo {
     text-decoration: none;
 }
 nav .logo img {
-    width: 100px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; 
+    height: auto; 
 }
 
 nav .links a,
 nav .login button {
     margin-right: 20px;
-    color: #fff; /* Set the default text color */
+    color: #fff; 
     background-color: transparent;
     padding: 10px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color change */
+    transition: background-color 0.3s ease, color 0.3s ease;  
 }
 
 nav .links a:hover {
@@ -69,34 +69,41 @@ nav .links a:hover {
     color: #4c4d52; 
 }
 
-nav .login button:hover {
-    background-color: #3ab9f4;
-    color: #fff; 
-}
-
 nav .login button.signup {
     background-color: #3ab9f4;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 12px;
     margin-right: 14px;
+    
 }
 
 nav .login button.signup:hover {
-    background-color: #333;
+    background-color: white;
+    color:black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
+    
 }
-nav .login button.signin{
+
+
+nav .login button.signin {
     background-color: #3ab9f4;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 12px;
     margin-right: 14px;
+   
 }
+
 nav .login button.signin:hover {
-    background-color: #333;
+    background-color: white;
+    color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
+    
 }
+
+
+
 .social-icon{
     
     font-size: 30px;
@@ -107,7 +114,34 @@ nav .login button.signin:hover {
 .social-icon:hover{
     color:#292ce9;
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); 
+}
+.image-row {
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0; 
+}
 
 
 
@@ -145,7 +179,7 @@ header a:hover {
     background-color: #0056b3;
 }
 
-/* About section styles */
+
 .about-section {
     background-color: #f8f8f8;
     padding: 80px 0;
@@ -168,115 +202,6 @@ header a:hover {
     color: #666666;
     margin-bottom: 20px;
 }
-
-/* Services section styles */
-.services-section {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.services-section h2 {
-    font-size: 28px;
-    color: #333333;
-    margin-bottom: 30px;
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-}
-
-.service {
-    width: 300px;
-    padding: 20px;
-    margin: 0 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service h3 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.service p {
-    font-size: 16px;
-    color: #666666;
-}
-
-/* Testimonials section styles */
-.testimonials-section {
-    padding: 80px 0;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.testimonials-section h2 {
-    font-size: 28px;
-    color: #333333;
-    margin-bottom: 30px;
-}
-
-.testimonials {
-    display: flex;
-    justify-content: center;
-}
-
-.testimonial {
-    width: 300px;
-    padding: 20px;
-    margin: 0 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 10px;
-}
-
-.testimonial p:last-child {
-    font-weight: bold;
-}
-
-/* Contact section styles */
-.contact-section {
-    padding: 80px 0;
-    text-align: center;
-    background-color: #f8f8f8;
-}
-
-.contact-section h2 {
-    font-size: 28px;
-    color: #333333;
-    margin-bottom: 30px;
-}
-
-.contact-section p {
-    font-size: 18px;
-    color: #666666;
-    margin-bottom: 30px;
-}
-
-.contact-button {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #007bff;
-    padding: 12px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer styles */
 footer {
     background-color: #333333;
     color: #ffffff;
@@ -303,7 +228,7 @@ footer .social i {
     cursor: pointer;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 24px;
@@ -344,3 +269,19 @@ footer .social i {
 }
 
 
+
+
+    
+
+
+    
+    
+
+
+
+    
+
+
+
+
+    
